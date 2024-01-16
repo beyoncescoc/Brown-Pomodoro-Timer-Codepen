@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Esteban|Montserrat:700");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Esteban", serif;
+}
+
+*:focus {
+  outline: none;
+}
+
+main {
+  padding: 10px;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+  color: #502821;
+}
+main .title {
+  display: block;
+  margin-bottom: 10px;
+  font-size: calc(2rem + 3vw);
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  text-shadow: 1px 1px 2px white;
+}
+main .container {
+  display: block;
+  margin: auto;
+  border-radius: 20px;
+  min-width: 300px;
+  max-width: 400px;
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(#f4ebd7, #f4ebd7);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4), inset 2px 2px 4px rgba(255, 255, 255, 0.6), inset -2px -2px 4px rgba(0, 0, 0, 0.6);
+}
+main .container .setter {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: calc(1rem + 1vw);
+  margin-bottom: 20px;
+}
+main .container .setter .minus,
+main .container .setter .plus {
+  background: transparent;
+  font-size: calc(1.1rem + 0.7vw);
+  padding: 0 0.5rem;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+main .container .timer {
+  font-size: 50px;
+  margin: 10px auto;
+  border: 5px solid #502821;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: default;
+}
+main .container .timer .time {
+  margin-top: 70px;
+  z-index: 1;
+  position: relative;
+}
+main .container .timer .filler {
+  background: #4f2820;
+  height: 0px;
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+}
+main .container #timer-label {
+  font-size: calc(1rem + 1vw);
+  margin-bottom: 20px;
+}
+main .container .buttons button {
+  color: #4f2820;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  padding: 5px;
+  width: 90px;
+  margin: 10px;
+  font-size: 1.3rem;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.6), inset -1px -1px 2px rgba(0, 0, 0, 0.6);
+}
+main .container .pause {
+  border: 1px solid #707000;
+  background: linear-gradient(#bb9472, #bb9472);
+}
+main .container .start {
+  border: 1px solid #bb9472;
+  background: linear-gradient(#bb9472, #bb9472);
+}
+main .container .stop {
+  border: 1px solid #bb9472;
+  background: linear-gradient(#bb9472, #bb9472);
+}
+main .container .buttons button:active {
+  top: 2px;
+  color: #b3b3b3;
+  border: 2px;
+}
+main .container .pause:active {
+  background: #818104;
+}
+main .container .start:active {
+  background: #bb9472;
+}
+main .container .stop:active {
+  background: #bb9472;
+}
+
+.author {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 16px;
+  color: white;
+}
+.author a {
+  text-decoration: none;
+  color: white;
+  line-height: 26px;
+}
